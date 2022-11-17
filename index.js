@@ -10,6 +10,15 @@ app.get("/aluno", (req, res )=> {
     res.send(usuario)
 }) ;
 
+app.get("/carro", (req, res )=> {
+    let usuario = {
+                    nome: "Honda Civic",
+                    motor : "1.8 Turbo",
+                    apelido : "Imã de interesseira"
+    }
+    res.send(usuario)
+}) ;
+
 app.get("/professores", (req, res )=> {
     let professores  = [ {
                     nome: "David Reis",
